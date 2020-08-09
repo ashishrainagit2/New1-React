@@ -103,13 +103,13 @@ Desc: To get fimiliar will all react features
 
 15. Eslint, prettier, husky // DOne
 
+16. Service workers // Done
+
 =====
 
-2. Service workers // Process
+17. Testing // Pending
 
 ===
-
-3. Testing // Pending
 
 4. Deploying React App // Pending
 
@@ -124,6 +124,8 @@ REACT ADVANCED
 3. Chunking //pending
 
 4. webpack
+
+5. lighthouse
 
 =====
 
