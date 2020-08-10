@@ -105,13 +105,13 @@ Desc: To get fimiliar will all react features
 
 16. Service workers // Done
 
+17. Deploying React App // Pending
+
 =====
 
-17. Testing // Pending
+18. Testing // Pending
 
 ===
-
-4. Deploying React App // Pending
 
 ======
 
