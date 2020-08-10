@@ -4,7 +4,7 @@ export class MainPage extends Component {
   render() {
     return (
       <div>
-        <h3>This is Main Page [Main]</h3>
+        <h3>This is Main Page!!!</h3>
       </div>
     );
   }
