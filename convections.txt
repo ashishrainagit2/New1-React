@@ -1,0 +1,4 @@
+1. All Custom element should start with capitol letters
+2. name of class based elementor function should be small
+3. function used locally inside page, pulled by mapdispatch  "on" added
+4. Above function used inside other componet, remove "on"

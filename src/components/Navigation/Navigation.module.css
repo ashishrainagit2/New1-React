@@ -1,6 +1,4 @@
-.active {
-  color: green;
-}
+
 
 .NavigationBar {
   list-style-type: none;
@@ -25,5 +23,12 @@
 
 .NavigationItem a:hover,
 .NavigationItem a.active {
-  background-color: #111;
+  background-color: rgb(253, 253, 253);
+  text-decoration: none;
+  color:black;
+  border: 1px solid black
+}
+
+.active {
+  background-color: white;
 }

@@ -2,19 +2,27 @@ import * as actionTypes from "../actions/actionTypes";
 // import { updateObject } from '../../shared/utility';
 
 const initialState = {
-  count: 1,
+  count: 10,
 };
 
-const incrementCounter = (state, action) => {
+const updateCounter = (state, action) => {
   return {
     count: action.counter,
   };
 };
 
+const resetCounter = (state, action) => {
+  return {
+    count: 10
+  };
+};
+
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case actionTypes.INCREMENT:
-      return incrementCounter(state, action);
+    case actionTypes.UPDATE:
+      return updateCounter(state, action);
+    case actionTypes.RESET:
+      return resetCounter(state, action);
     default:
       return state;
   }

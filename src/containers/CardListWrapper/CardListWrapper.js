@@ -1,13 +1,18 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
 import * as actions from "../../store/actions/index";
-
 import CardList from "../../components/CardList/CardList";
+import classes from "./CardListWrapper.module.css";
 
 export class CardListWrapper extends Component {
+
+  componentDidMount() {
+    this.props.onSetUsers();
+  }
+  
   render() {
     return (
-      <div>
+      <div className={classes.CardListWrapper}>
         <CardList list={this.props.usersList} />
       </div>
     );
@@ -16,16 +21,14 @@ export class CardListWrapper extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    counterValue: state.counter.count,
     usersList: state.users.users,
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onCounterIncrement: (counter) => dispatch(actions.incrementCounter(counter)),
     onSetUsers: () => dispatch(actions.setUsers()),
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(CardListWrapper);
+export default connect(mapStateToProps , mapDispatchToProps)(CardListWrapper);

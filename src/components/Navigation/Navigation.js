@@ -7,28 +7,33 @@ function Navigation() {
     <div>
       <ul className={classes.NavigationBar}>
         <li className={classes.NavigationItem}>
-          <NavLink exact activeClassName="active" to="/">
+          <NavLink exact activeClassName={classes.active} to="/">
             HOME
           </NavLink>
         </li>
         <li className={classes.NavigationItem}>
-          <NavLink activeClassName="active" to="/api">
-            API
-          </NavLink>
-        </li>
-        <li className={classes.NavigationItem}>
-          <NavLink activeClassName="active" to="/counter">
+          <NavLink exact activeClassName={classes.active} to="/counter">
             COUNTER
           </NavLink>
         </li>
         <li className={classes.NavigationItem}>
-          <NavLink activeClassName="active" to="/contactus">
+          <NavLink activeClassName={classes.active} to="/api">
+            API
+          </NavLink>
+        </li>
+        <li className={classes.NavigationItem}>
+          <NavLink activeClassName={classes.active} to="/contactus">
             CONTACT-US
           </NavLink>
         </li>
         <li className={classes.NavigationItem}>
-          <NavLink activeClassName="active" to="/bootstrapExample">
+          <NavLink activeClassName={classes.active} to="/bootstrapExample">
             BOOTSTRAP
+          </NavLink>
+        </li>
+        <li className={classes.NavigationItem}>
+          <NavLink activeClassName="active" to="/counter-Hook">
+            COUNTER-BY-HOOK
           </NavLink>
         </li>
         {/* <li className={classes.NavigationItem}>

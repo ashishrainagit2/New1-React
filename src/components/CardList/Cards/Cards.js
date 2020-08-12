@@ -3,13 +3,14 @@ import PropTypes from "prop-types";
 import classes from "./Cards.module.css";
 
 function Cards(props) {
+  let cnameMod = props.cname ? (props.cname).substring(0, 10) : null;
   return (
     <div className={classes.wrapper}>
       {props.id ? <h2> Card Number :{props.id}</h2> : null}
       <div>
         {props.cname ? (
           <div>
-            Company Name :<span className={classes.data}>{props.cname}</span>
+            Company Name :<span className={classes.data}>{cnameMod}</span>
           </div>
         ) : null}
         {props.phrase ? (

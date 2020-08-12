@@ -9,7 +9,9 @@ export class CounterExample extends Component {
       <div>
         <Counter
           value={this.props.counterValue}
-          clickHandler={() => this.props.onCounterIncrement(this.props.counterValue)}
+          counterIncrement={() => this.props.onCounterIncrement(this.props.counterValue)}
+          counterDecrement={() => this.props.onCounterDecrement(this.props.counterValue)}
+          resetCounter={() => this.props.onResetCounter()}
         />
       </div>
     );
@@ -26,7 +28,8 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     onCounterIncrement: (counter) => dispatch(actions.incrementCounter(counter)),
-    onSetUsers: () => dispatch(actions.setUsers()),
+    onCounterDecrement: (counter) => dispatch(actions.decrementCounter(counter)),
+    onResetCounter: () => dispatch(actions.resetCounter()),
   };
 };
 

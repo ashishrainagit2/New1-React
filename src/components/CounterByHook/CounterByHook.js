@@ -1,18 +1,32 @@
 import React, {useState, useEffect} from "react";
-import classes from "./ApiByHook.module.css";
+import {Button, Container, Row, Col} from "react-bootstrap";
 
 function ApiByHook() {
   const [counter, counterIncrementer] = useState(0);
 
   useEffect(() => {
-    document.title = `You Clicked ${counter} times!`;
+    document.title = `Clck : ${counter} times!`;
   });
 
   return (
-    <div>
-      <p className={classes.center}>Hooked up API</p>
-      <p onClick={() => counterIncrementer(counter + 1)}>Counter :{counter}</p>
-    </div>
+    <Container>
+        <Row>
+            <Col sm={12} >
+            <p>This counter uses Hooks!</p>
+            </Col>
+
+            <Col sm={12}>
+              <p>Counter :{"  "} {counter }</p>
+            </Col>
+
+            <Col sm={12}> 
+              <Button onClick={() => counterIncrementer(counter + 1)}>
+                Increment Me
+              </Button>
+            </Col>
+
+        </Row>
+      </Container>
   );
 }
 

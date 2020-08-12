@@ -130,7 +130,6 @@ export class ContactUs extends Component {
   };
 
   changeHandler = (event) => {
-    debugger;
     let name = event.target.name;
     let value = event.target.value;
 
@@ -159,14 +158,13 @@ export class ContactUs extends Component {
 
   formSubmitHandler = (event) => {
     event.preventDefault();
-    alert("123");
     const formData = {};
     for (let formElementId in this.state.formControls) {
       formData[formElementId] = this.state.formControls[formElementId].value;
     }
     console.log("object", "object");
     console.dir(formData);
-    this.props.history.push("/main");
+    this.props.history.push("/");
   };
 
   render() {

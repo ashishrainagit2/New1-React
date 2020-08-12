@@ -1,13 +1,17 @@
 .wrapper {
   border: 1px solid rgb(1, 0, 61);
-  width: 500px;
+  width: 300px;
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
   display: inline-block;
+  height: 300px;
+  background-color: rgb(232, 247, 238);
+  color: black;
+  font-weight: 400;
 }
 
 .data {
-  font-weight: 400;
-  color: rgb(125, 136, 233);
+  font-weight: 800;
+  color: rgb(7, 31, 247);
 }
