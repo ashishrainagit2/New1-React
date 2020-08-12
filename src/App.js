@@ -1,6 +1,9 @@
-import React, {Component} from "react";
-/* eslint no-use-before-define: 0 */  // --> OFF Redirect
-import {Route, Switch, withRouter} from "react-router-dom"; 
+import React, {Component} from "react"; // --> OFF Redirect
+/* eslint no-use-before-define: 0 */ import {
+  Route,
+  Switch,
+  withRouter,
+} from "react-router-dom";
 import {connect} from "react-redux";
 
 import CardListWrapper from "./containers/CardListWrapper/CardListWrapper";
@@ -11,8 +14,6 @@ import ContactUs from "./containers/ContactUs/ContactUs";
 import CounterByHook from "./components/CounterByHook/CounterByHook";
 import Page404 from "./components/Errorpages/Page404/Page404";
 import ApiByHook from "./components/ApiByHook/ApiByHook";
-import ApiByHookTwo from "./components/ApiByHookTwo/ApiByHookTwo";
-import ApiByHookThree from "./components/ApiByHookThree/ApiByHookThree";
 import ApiByHookFour from "./components/ApiByHookFour/ApiByHookFour";
 import bootstrapExample from "./components/bootstrapExample/bootstrapExample";
 import "./App.css";
@@ -36,8 +37,6 @@ class App extends Component {
         CounterByHook
         <Route path="/counter-Hook" component={CounterByHook} />
         <Route path="/apibyhooks" component={ApiByHook} />
-        <Route path="/apibyhooksTwo" component={ApiByHookTwo} />
-        <Route path="/apibyhooksThree" component={ApiByHookThree} />
         <Route path="/apibyhooksFour" component={ApiByHookFour} />
         <Route path="/bootstrapExample" component={bootstrapExample} />
         <Route path="/" exact component={MainPage} />
@@ -56,7 +55,5 @@ class App extends Component {
     );
   }
 }
-
-
 
 export default withRouter(connect()(App));
