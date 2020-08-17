@@ -16,7 +16,7 @@ function ApiByHook() {
             </Col>
 
             <Col sm={12}>
-              <p>Counter :{"  "} {counter }</p>
+              <p data-testid="count">Counter :{"  "} {counter }</p>
             </Col>
 
             <Col sm={12}> 

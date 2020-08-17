@@ -74,6 +74,10 @@ Implemented the below list:
 =====
 18. Testing // Pending
 
+{go through react concepts , koa/node basics / boiler plate, ssr}
+
+
+
 19. redux with hooks
 
 20. error in API failure
@@ -82,9 +86,15 @@ Implemented the below list:
 
 22.portals
 
+23. all other react features like renderprops, profiler, hooks like usecallback, memo etc etc
+
+24. redux features
+
+25. react router features
+
 ======
 
-REACT ADVANCED {Another project}
+REACT ADVANCED {For Another project}
 
 1. Boiler plate
 

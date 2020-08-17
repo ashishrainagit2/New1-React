@@ -36,24 +36,14 @@ function Navigation() {
             COUNTER-BY-HOOK
           </NavLink>
         </li>
-        {/* <li className={classes.NavigationItem}>
-                    <NavLink activeClassName="active" to="/apibyhooks">
-                        API-BY-HOOKS
-                    </NavLink>
-                </li>
-                <li className={classes.NavigationItem}>
-                    <NavLink activeClassName="active" to="/apibyhooksTwo">
-                        API-BY-HOOKS-TWO
-                    </NavLink>
-                </li>
-                <li className={classes.NavigationItem}>
-                    <NavLink activeClassName="active" to="/apibyhooksThree">
-                        API-BY-HOOKS-THREE
-                    </NavLink>
-                </li> */}
         <li className={classes.NavigationItem}>
           <NavLink activeClassName="active" to="/apibyhooksFour">
             API-BY-CUSTOM-HOOKS
+          </NavLink>
+        </li>
+        <li className={classes.NavigationItem}>
+          <NavLink activeClassName="active" to="/testingExampleWrapper">
+            TESTING-DEMO
           </NavLink>
         </li>
       </ul>

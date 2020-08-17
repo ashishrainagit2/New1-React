@@ -5,15 +5,15 @@ import classes from "./Counter.module.css";
 function Counter(props) {
   return (
     <div className={classes.Wrapper}>
-      <p>Counter Example displaying full power or react, redux and react-router</p>
+      <p>Counter Example displayed using react, redux and react-router</p>
       <div>
         <p>
-          Click Counter - {" "} {props.value}
+          Click Counter - {props.value}
         </p>
       </div>
       <div>
-        <button onClick={props.counterIncrement} className={classes.custButton}> Increment </button>
-        <button onClick={props.counterDecrement} className={classes.custButton}> Decrement </button>
+        <button onClick={props.counterIncrement} className={classes.custButton}  data-testid="balue"> Increment </button>
+        <button onClick={props.counterDecrement} className={classes.custButton} > Decrement </button>
         <button onClick={props.resetCounter} className={classes.custButton}> Reset </button>
         <br /> <br /> <hr />
           <div>

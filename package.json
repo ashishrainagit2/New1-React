@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@testing-library/react": "^10.4.8",
     "axios": "^0.19.2",
     "bootstrap": "^4.5.0",
     "cra-template": "1.0.3",
@@ -62,10 +63,12 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.3",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
     "husky": "^4.2.5",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "react-test-renderer": "^16.13.1"
   }
 }
