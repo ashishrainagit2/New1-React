@@ -5,6 +5,7 @@ import React, {Component} from "react"; // --> OFF Redirect
   withRouter,
 } from "react-router-dom";
 import {connect} from "react-redux";
+import ReactGA from "react-ga";
 
 import CardListWrapper from "./containers/CardListWrapper/CardListWrapper";
 import CounterExample from "./containers/CounterExample/CounterExample";
@@ -27,8 +28,6 @@ class App extends Component {
       Text: " A simple website created using react reducer eco-system ",
     };
   }
-
-
 
   render() {
     const routes = (
@@ -54,6 +53,11 @@ class App extends Component {
       </div>
     );
   }
+}
+
+function initializeReactGA() {
+  ReactGA.initialize("UA-125593276-2");
+  ReactGA.pageview("/homepage");
 }
 
 export default withRouter(connect()(App));

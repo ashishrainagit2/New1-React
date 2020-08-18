@@ -10,7 +10,7 @@ Desc: Familirity with all React-Redux Eco System
 
 Implemented the below list:
 
-1. Create-react-app basics 
+1.  Create-react-app basics
 
         Basic Commands
             npx create-react-app my-app
@@ -20,65 +20,82 @@ Implemented the below list:
         More Information at Official Docs
             https://create-react-app.dev/
 
-2. React 
-        functional and class based components
+2.  React
+    functional and class based components
 
-3. Redux
+3.  Redux
 
-4. React Router
+4.  React Router
 
-5. Debugging React Apps
+5.  Debugging React Apps
 
-6. API 
-        Axios
+6.  API
+    Axios
 
-7. css 
-        css Modules
+7.  css
+    css Modules
 
-8. Visual studio code setup
-        Extension: ES7 React/Redux/GraphQL/React-Native snippets
+8.  Visual studio code setup
+    Extension: ES7 React/Redux/GraphQL/React-Native snippets
 
+9)  Navigation
 
-9. Navigation
+10) Forms
+    using core react
 
-10. Forms 
-        using core react
+11) css framework
+    bootstrap: https://www.youtube.com/watch?v=VmReQaQl5fk
 
-11. css framework
-   bootstrap: https://www.youtube.com/watch?v=VmReQaQl5fk
+12) Hooks
+    https://www.robinwieruch.de/react-hooks-fetch-data
 
-12. Hooks
-                https://www.robinwieruch.de/react-hooks-fetch-data
+13) error page 404
 
-12. error page 404
+14) Static type checking
+    Prop-types
 
-13. Static type checking
-        Prop-types
+15) UI framework
+    React-bootstrap
 
-14. UI framework 
-        React-bootstrap
-
-15. Eslint, prettier, husky
+16) Eslint, prettier, husky
 
                 https://thomlom.dev/setup-eslint-prettier-react/
 
-16. Service workers
-        In-build service worker of  CRA
+17) Service workers
+    In-build service worker of CRA
 
-17. Deploying React App 
-        Netlify 
-        https://blog.logrocket.com/from-create-react-app-to-pwa/
+18) Deploying React App
+    Netlify
+    https://blog.logrocket.com/from-create-react-app-to-pwa/
 
-18. Git setup
+19) Git setup
+
+20) Testing done with google testing library
 
 =====
-18. Testing // Pending
 
 {go through react concepts , koa/node basics / boiler plate, ssr}
 
+=======
 
+things to do further:
 
-19. redux with hooks
+analytics
+sitemap
+review the whole site
+
+fast theory for interview
+go through react concepts along with hooks{theory}
+go through redux concepts with hooks{theory}
+go through redux router
+
+REACT ADVANCED {For Another project}
+
+1. webpack/Boiler plate
+2. SSR
+3. Chunking
+
+things to add later
 
 20. error in API failure
 
@@ -93,16 +110,6 @@ Implemented the below list:
 25. react router features
 
 ======
-
-REACT ADVANCED {For Another project}
-
-1. Boiler plate
-
-2. SSR // Pending
-
-3. Chunking //pending
-
-4. webpack
 
 =====
 
