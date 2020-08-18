@@ -55,9 +55,7 @@ class App extends Component {
   }
 }
 
-function initializeReactGA() {
-  ReactGA.initialize("UA-125593276-2");
-  ReactGA.pageview("/homepage");
-}
+ReactGA.initialize("UA-125593276-2");
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 export default withRouter(connect()(App));
