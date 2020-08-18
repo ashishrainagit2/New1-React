@@ -8,7 +8,8 @@ import {connect} from "react-redux";
 import ReactGA from "react-ga";
 
 import CardListWrapper from "./containers/CardListWrapper/CardListWrapper";
-import CounterExample from "./containers/CounterExample/CounterExample";
+// import CounterExample from "./containers/CounterExample/CounterExample";
+
 import MainPage from "./containers/MainPage/MainPage";
 import Layout from "./hoc/Layout/Layout";
 import ContactUs from "./containers/ContactUs/ContactUs";
@@ -18,8 +19,11 @@ import ApiByHook from "./components/ApiByHook/ApiByHook";
 import ApiByHookFour from "./components/ApiByHookFour/ApiByHookFour";
 import bootstrapExample from "./components/bootstrapExample/bootstrapExample";
 import TestingExampleWrapper from "./components/TestingExampleWrapper/TestingExampleWrapper";
+import ErrorComponent from  "./containers/ErrorComponent/ErrorComponent";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+
+const CounterExample = React.lazy(() => import('./containers/CounterExample/CounterExample'));
 
 class App extends Component {
   constructor(props) {
@@ -31,18 +35,21 @@ class App extends Component {
 
   render() {
     const routes = (
-      <Switch>
-        <Route path="/counter" component={CounterExample} />
-        <Route path="/api" component={CardListWrapper} />
-        <Route path="/contactus" component={ContactUs} />
-        <Route path="/counter-Hook" component={CounterByHook} />
-        <Route path="/apibyhooks" component={ApiByHook} />
-        <Route path="/apibyhooksFour" component={ApiByHookFour} />
-        <Route path="/bootstrapExample" component={bootstrapExample} />
-        <Route path="/TestingExampleWrapper" component={TestingExampleWrapper} />
-        <Route path="/" exact component={MainPage} />
-        <Route component={Page404} />
-      </Switch>
+      <React.Suspense fallback={<div>Loading...</div>}>
+        <Switch>
+          <Route path="/counter" component={CounterExample} />
+          <Route path="/api" component={CardListWrapper} />
+          <Route path="/contactus" component={ContactUs} />
+          <Route path="/counter-Hook" component={CounterByHook} />
+          <Route path="/apibyhooks" component={ApiByHook} />
+          <Route path="/apibyhooksFour" component={ApiByHookFour} />
+          <Route path="/bootstrapExample" component={bootstrapExample} />
+          <Route path="/TestingExampleWrapper" component={TestingExampleWrapper} />
+          <Route path="/Error"  component={ErrorComponent} />
+          <Route path="/" exact component={MainPage} />
+          <Route component={Page404} />
+        </Switch>
+      </React.Suspense>
     );
     return (
       <div>

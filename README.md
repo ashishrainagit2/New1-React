@@ -149,3 +149,11 @@ for node project, as an example
 
 npm init {for node project only}
 git init
+
+
+CODE SNIPPETS:
+
+CODEPEN
+JSFIDDLE
+gist.github
+github
