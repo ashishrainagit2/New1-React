@@ -1,16 +1,17 @@
-import React, { Component } from 'react';
-import ErrorBoundary from '../../hoc/ErrorBoundary'
+import React, {Component} from "react";
+import ErrorBoundary from "../../hoc/ErrorBoundary";
 
 export class ErrorComponent extends Component {
-    render() {
-        return (
-            <ErrorBoundary>
-                <div>
-                    <div>broken div
-                </div>
-            </ErrorBoundary>
-        )
-    }
+  render() {
+    return (
+      <ErrorBoundary>
+        <div>
+          <div>broken div </div>
+          {/* --no-verify  */}
+        </div>
+      </ErrorBoundary>
+    );
+  }
 }
 
-export default ErrorComponent
+export default ErrorComponent;
