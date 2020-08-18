@@ -25,7 +25,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      Text: " A simple website created using react reducer eco-system: v18.8 ",
+      Text: " A simple website created using react reducer eco-system: v18.8.v2 ",
     };
   }
 
