@@ -17,7 +17,8 @@ class ErrorComponent extends React.Component {
   render() {
     if (this.state.counter === 5) {
       // Simulate a JS error
-      throw new Error("I crashed!");
+      // throw new Error("I crashed!");
+      return <h1>Something went wrong.</h1>;
     }
     return <h1 onClick={this.handleClick}>{this.state.counter}</h1>;
   }

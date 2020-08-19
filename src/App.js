@@ -19,17 +19,19 @@ import ApiByHook from "./components/ApiByHook/ApiByHook";
 import ApiByHookFour from "./components/ApiByHookFour/ApiByHookFour";
 import bootstrapExample from "./components/bootstrapExample/bootstrapExample";
 import TestingExampleWrapper from "./components/TestingExampleWrapper/TestingExampleWrapper";
-import ErrorComponent from  "./containers/ErrorComponent/ErrorComponent";
+import ErrorComponent from "./containers/ErrorComponent/ErrorComponent";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const CounterExample = React.lazy(() => import('./containers/CounterExample/CounterExample'));
+const CounterExample = React.lazy(() =>
+  import("./containers/CounterExample/CounterExample")
+);
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      Text: " A simple website created using react reducer eco-system: v18.8.v2 ",
+      Text: " A simple website created using react reducer eco-system: v18.8.v3 ",
     };
   }
 
@@ -45,7 +47,7 @@ class App extends Component {
           <Route path="/apibyhooksFour" component={ApiByHookFour} />
           <Route path="/bootstrapExample" component={bootstrapExample} />
           <Route path="/TestingExampleWrapper" component={TestingExampleWrapper} />
-          <Route path="/Error"  component={ErrorComponent} />
+          <Route path="/Error" component={ErrorComponent} />
           <Route path="/" exact component={MainPage} />
           <Route component={Page404} />
         </Switch>
