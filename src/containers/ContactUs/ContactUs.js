@@ -72,6 +72,12 @@ export class ContactUs extends Component {
         },
       },
     };
+    this.textInput = React.createRef();
+  }
+
+  componentDidMount() {
+    const inputNode = this.textInput.current;
+    inputNode.focus();
   }
 
   validate = (value, rules) => {
@@ -180,6 +186,7 @@ export class ContactUs extends Component {
                 name="name"
                 value={this.state.formControls.name.value}
                 onChange={this.changeHandler}
+                ref={this.textInput}
               />
               {!this.state.formControls.name.valid &&
                 this.state.formControls.name.touched && <p> error</p>}

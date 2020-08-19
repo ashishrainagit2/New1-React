@@ -20,6 +20,12 @@ import ApiByHookFour from "./components/ApiByHookFour/ApiByHookFour";
 import bootstrapExample from "./components/bootstrapExample/bootstrapExample";
 import TestingExampleWrapper from "./components/TestingExampleWrapper/TestingExampleWrapper";
 import ErrorComponent from "./containers/ErrorComponent/ErrorComponent";
+import RenderPropsCounter from "./containers/RenderPropsExample/RenderPropsExample";
+import HOCExample from "./containers/HOCExample/HOCExample";
+import CallBackRef from "./containers/CallBackRef/CallBackRef";
+import FancybuttonWrapper from "./containers/FancyButtonWrapper/FancyButtonWrapper";
+import PortalsExample from "./components/PortalExample/PortalExample";
+
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -48,6 +54,11 @@ class App extends Component {
           <Route path="/bootstrapExample" component={bootstrapExample} />
           <Route path="/TestingExampleWrapper" component={TestingExampleWrapper} />
           <Route path="/Error" component={ErrorComponent} />
+          <Route path="/RenderProps" component={RenderPropsCounter} />
+          <Route path="/hocexample" component={HOCExample} />
+          <Route path="/callbackref" component={CallBackRef} />
+          <Route path="/FancybuttonWrapper" component={FancybuttonWrapper} />
+          <Route path="/PortalsExample" component={PortalsExample} />
           <Route path="/" exact component={MainPage} />
           <Route component={Page404} />
         </Switch>
